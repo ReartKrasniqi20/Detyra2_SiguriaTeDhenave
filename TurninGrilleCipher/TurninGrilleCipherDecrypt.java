@@ -2,43 +2,35 @@ package TurninGrilleCipher;
 
 public class TurninGrilleCipherDecrypt {
 
-    public static String decrypt(String encryptedText, int size) {
-        // Create the grille
-        char[][] grille = createGrille(size);
-
-        // Decrypt the encrypted text
+    public static String decrypt(String encryptedText, char[][] grille) {
         StringBuilder decryptedText = new StringBuilder();
-        int index = 0;
-        for (int i = 0; i < size; i++) {
-            for (int j = 0; j < size; j++) {
-                if (grille[i][j] == 'X') {
-                    decryptedText.append(encryptedText.charAt(index++));
+
+        for (int i = 0; i < 4; i++) {
+            for (int row = 0; row < grille.length; row++) {
+                for (int col = 0; col < grille[row].length; col++) {
+                    if (grille[row][col] == 'X') {
+                        decryptedText.append(encryptedText.charAt(0));
+                        encryptedText = encryptedText.substring(1);
+                    }
                 }
             }
+            grille = rotateGrille(grille);
         }
+
         return decryptedText.toString();
     }
 
-    private static char[][] createGrille(int size) {
-        char[][] grille = new char[size][size];
-        int numX = size * size / 4; // Number of X's to place
+    private static char[][] rotateGrille(char[][] grille) {
+        int n = grille.length;
+        char[][] rotatedGrille = new char[n][n];
 
-        // Initialize grille with dots
-        for (int i = 0; i < size; i++) {
-            for (int j = 0; j < size; j++) {
-                grille[i][j] = '.';
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                rotatedGrille[j][n - i - 1] = grille[i][j];
             }
         }
 
-        // Place X's randomly
-        while (numX > 0) {
-            int i = (int) (Math.random() * size);
-            int j = (int) (Math.random() * size);
-            if (grille[i][j] == '.') {
-                grille[i][j] = 'X';
-                numX--;
-            }
-        }
-        return grille;
+        return rotatedGrille;
     }
 }
+

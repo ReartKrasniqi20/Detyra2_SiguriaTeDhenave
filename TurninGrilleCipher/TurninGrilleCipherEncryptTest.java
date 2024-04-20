@@ -4,9 +4,12 @@ public class TurninGrilleCipherEncryptTest {
 
     public static void main(String[] args) {
         String plaintext = "HELLO";
-        int size = 2; // Size of the grille
+        char[][] grille = {
+            {'X', 'X'},
+            {'X', '.'}
+        };
         
-        String encryptedText = TurninGrilleCipherEncrypt.encrypt(plaintext, size);
+        String encryptedText = TurninGrilleCipherEncrypt.encrypt(plaintext, grille);
         System.out.println("Encrypted Text: " + encryptedText);
     }
 }
