@@ -1,4 +1,5 @@
 package VigenereCipher;
+
 public class VigenereCipherDecrypt {
 
     public static String decrypt(String encryptedText, String keyword) {
@@ -8,15 +9,14 @@ public class VigenereCipherDecrypt {
 
         for (int i = 0, j = 0; i < encryptedText.length(); i++) {
             char c = encryptedText.charAt(i);
-            if (c >= 'A' && c <= 'Z') {
-                int shift = keyword.charAt(j) - 'A';
-                char decryptedChar = (char) ((c - 'A' - shift + 26) % 26 + 'A');
-                decryptedText.append(decryptedChar);
-                j = (j + 1) % keyword.length();
-            }
+            int shift = keyword.charAt(j) - 'A';
+            char decryptedChar = (char) ((c - 'A' - shift + 26) % 26 + 'A');
+            decryptedText.append(decryptedChar);
+            j = (j + 1) % keyword.length();
         }
 
         return decryptedText.toString();
     }
 }
+
 
