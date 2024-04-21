@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "VigenereCipherTest",
+            "request": "launch",
+            "mainClass": "VigenereCipher.VigenereCipherTest",
+            "projectName": "Detyra2_SiguriaTeDhenave_c63ae0e0"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"

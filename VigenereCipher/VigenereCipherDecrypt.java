@@ -1,22 +1,20 @@
 package VigenereCipher;
 
 public class VigenereCipherDecrypt {
-
-    public static String decrypt(String encryptedText, String keyword) {
-        encryptedText = encryptedText.toUpperCase();
-        keyword = keyword.toUpperCase();
-        StringBuilder decryptedText = new StringBuilder();
-
-        for (int i = 0, j = 0; i < encryptedText.length(); i++) {
-            char c = encryptedText.charAt(i);
-            int shift = keyword.charAt(j) - 'A';
-            char decryptedChar = (char) ((c - 'A' - shift + 26) % 26 + 'A');
-            decryptedText.append(decryptedChar);
-            j = (j + 1) % keyword.length();
+    public static String decrypt(String message, String key) {
+        StringBuilder decryptedMessage = new StringBuilder();
+        message = message.toUpperCase();
+        key = key.toUpperCase();
+        int keyLength = key.length();
+        for (int i = 0, j = 0; i < message.length(); i++) {
+            char letter = message.charAt(i);
+            if (Character.isLetter(letter)) {
+                decryptedMessage.append((char)(((letter - 'A') - (key.charAt(j) - 'A') + 26) % 26 + 'A'));
+                j = ++j % keyLength;
+            } else {
+                decryptedMessage.append(letter); // Retain non-alphabetic characters
+            }
         }
-
-        return decryptedText.toString();
+        return decryptedMessage.toString();
     }
 }
-
-
