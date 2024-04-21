@@ -1,35 +1,36 @@
 == Shpjegimi i klases Main ==
-Programi Java i dhënë Main kryen operacione enkriptimi dhe dekriptimi në një tekst të dhënë. Programi përdor klasën Scanner nga paketa java.util për të lexuar input nga përdoruesi. 
-Pas ekzekutimit, përdoruesit i kërkohet të zgjedhë mes enkriptimit (1) dhe dekriptimit (2).
-Pas zgjedhjes së një operacioni, përdoruesit i kërkohet të japë një tekst. Nëse gjatësia e tekstit të dhënë është më pak se 36 karaktere, programi shton karakteret 'x' në tekst derisa gjatësia e tij të arrijë 36 karaktere. 
-Nëse gjatësia e tekstit të dhënë tejkalon 36 karaktere, programi e ndanë(prenë) tekstin në 36 karakteret e para dhe shfaq një mesazh që informon përdoruesin për prerjen.
-Për enkriptim (d == 1), programi përdor një metodë nga klasa Encryption(Encryption.encrypt) për të enkriptuar tekstin e dhënë. Teksti i enkriptuar ruhet në një varg karakteresh 2D (char[][] out). 
-Programi pastaj printon tekstin e enkriptuar në formatin e vargut të dyfishtë.
-Për dekriptim (d == 2), programi përdor një metodë nga klasa Decryption(Decryption.dencrypt) për të dekriptuar tekstin e dhënë. Teksti i dekriptuar ruhet në një varg karakteresh 2D (char[][] out) dhe printohet në konsolë.
+Programi Java i dhene Main kryen operacione enkriptimi dhe dekriptimi ne nje tekst te dhene. Programi perdor klasen Scanner nga paketa java.util per te lexuar input nga perdoruesi. 
+Pas ekzekutimit, perdoruesit i kerkohet te zgjedhe mes enkriptimit (1) dhe dekriptimit (2).
+Pas zgjedhjes se nje operacioni, perdoruesit i kerkohet te jape nje tekst. Nese gjatesia e tekstit te dhene eshte me pak se 36 karaktere, programi shton karakteret 'x' ne tekst derisa gjatesia e tij te arrije 36 karaktere. 
+Nese gjatesia e tekstit te dhene tejkalon 36 karaktere, programi e ndane(prene) tekstin ne 36 karakteret e para dhe shfaq nje mesazh qe informon perdoruesin per prerjen.
+Per enkriptim (d == 1), programi perdor nje metode nga klasa Encryption(Encryption.encrypt) per te enkriptuar tekstin e dhene. Teksti i enkriptuar ruhet ne nje varg karakteresh 2D (char[][] out). 
+Programi pastaj printon tekstin e enkriptuar ne formatin e vargut te dyfishte.
+Per dekriptim (d == 2), programi perdor nje metode nga klasa Decryption(Decryption.dencrypt) per te dekriptuar tekstin e dhene. Teksti i dekriptuar ruhet ne nje varg karakteresh 2D (char[][] out) dhe printohet ne konsole.
 
 == Shpjegimi i klases Encryption ==
-Klasa Encryption përdoret për të kryer enkriptimin e tekstit duke përdorur një algoritëm të njohur si "Fleissner Cipher Schablone". 
-Metoda encrypt merr një tekst si input dhe kthen një matricë karakteresh 2D, e cila përmban tekstin e enkriptuar. 
-Algoritmi fillimisht përdor një matricë fillestare të quajtur a1, ku disa karaktere janë zëvendësuar me 'X' për vendndodhjen e tekstit të enkriptuar. 
-Teksti i dhënë ndahet në pjesë të vogla(substrings) dhe vendoset në matricën fillestare a1.
-Pas kryerjes së këtij operacioni, matrica fillestare a1 rrotullohet përmes metodes rotate dhe procesi i enkriptimit përsëritet kundër tekstit të dhënë deri sa të gjithë karakteret të jenë përdorur për enkriptim.
-Rezultati është një matricë karakteresh 2D me tekstin e enkriptuar.
-Metoda rotate përdoret për të rrotulluar një matricë 6x6 me karaktere në drejtimin orar. 
-Kjo është një pjesë e rëndësishme e algoritmit, pasi ndihmon në ndryshimin e vendndodhjes së karaktereve në çdo iteracion të procesit të enkriptimit.
+Klasa Encryption perdoret per te kryer enkriptimin e tekstit duke perdorur nje algoritem te njohur si "Fleissner Cipher Schablone". 
+Metoda encrypt merr nje tekst si input dhe kthen nje matrice karakteresh 2D, e cila permban tekstin e enkriptuar. 
+Algoritmi fillimisht perdor nje matrice fillestare te quajtur a1, ku disa karaktere jane zevendesuar me 'X' per vendndodhjen e tekstit te enkriptuar. 
+Teksti i dhene ndahet ne pjese te vogla(substrings) dhe vendoset ne matricen fillestare a1.
+Pas kryerjes se ketij operacioni, matrica fillestare a1 rrotullohet permes metodes rotate dhe procesi i enkriptimit perseritet kunder tekstit te dhene deri sa te gjithe karakteret te jene perdorur per enkriptim.
+Rezultati eshte nje matrice karakteresh 2D me tekstin e enkriptuar.
+Metoda rotate perdoret per te rrotulluar nje matrice 6x6 me karaktere ne drejtimin orar. 
+Kjo eshte nje pjese e rendesishme e algoritmit, pasi ndihmon ne ndryshimin e vendndodhjes se karaktereve ne çdo iteracion te procesit te enkriptimit.
 
 == Shpjegim i klases Decryption ==
-Kjo është klasa Decryption që përdoret për të dekriptuar tekstin e enkriptuar duke përdorur algoritmin e "Fleissner Cipher". 
-Algoritmi i dekriptimit është një proces i kundërt i atij të enkriptimit, ku karakteret e tekstit të enkriptuar vendosen në një matricë të përcaktuar sipas një rregulli të "Cipher"-it për të zbuluar tekstin origjinal.
-Metoda decrypt merr një tekst të enkriptuar si input dhe kthen një matricë karakteresh 2D me tekstin e dekriptuar. 
-Karakteret e tekstit të enkriptuar vendosen në pozicionet e caktuara të matricës sipas një rregulli të caktuar për të kthyer tekstin e dekriptuar.
-Ne kemi vendosur që në matricën fillestare, tek pozitat "x", të gjenden karakteret e plaintext-it. Duke e ditur këtë, mund të supozojmë se si të gjejmë karakteret për të dekriptuar tekstin. 
-Duke rrotulluar matricën në drejtimin e njëjtë dhe duke ditur matricën fillestare, arrijmë tek një matricë 2D e cila ofron plaintext-in e enkriptuar përmes metodes encrypt.
-Për shembull, karakteri në pozicionin e dytë të tekstit të enkriptuar do të vendoset në pozicionin e parë të matricës dekriptuese, karakteri në pozicionin e tretë do të vendoset në pozicionin e dytë të matricës, dhe kështu me radhë
+Kjo eshte klasa Decryption qe perdoret per te dekriptuar tekstin e enkriptuar duke perdorur algoritmin e "Fleissner Cipher". 
+Algoritmi i dekriptimit eshte nje proces i kundert i atij te enkriptimit, ku karakteret e tekstit te enkriptuar vendosen ne nje matrice te percaktuar sipas nje rregulli te "Cipher"-it per te zbuluar tekstin origjinal.
+Metoda decrypt merr nje tekst te enkriptuar si input dhe kthen nje matrice karakteresh 2D me tekstin e dekriptuar. 
+Karakteret e tekstit te enkriptuar vendosen ne pozicionet e caktuara te matrices sipas nje rregulli te caktuar per te kthyer tekstin e dekriptuar.
+Ne kemi vendosur qe ne matricen fillestare, tek pozitat "x", te gjenden karakteret e plaintext-it. Duke e ditur kete, mund te supozojme se si te gjejme karakteret per te dekriptuar tekstin. 
+Duke rrotulluar matricen ne drejtimin e njejte dhe duke ditur matricen fillestare, arrijme tek nje matrice 2D e cila ofron plaintext-in e enkriptuar permes metodes encrypt.
+Per shembull, karakteri ne pozicionin e dyte te tekstit te enkriptuar do te vendoset ne pozicionin e pare te matrices dekriptuese, karakteri ne pozicionin e trete do te vendoset ne pozicionin e dyte te matrices, dhe keshtu me radhe
 
 == Shpjegimi i klases SubString ==
-Ne klasen substring gjendet metoda substring për të ndarë tekstin hyrës në nënpjesë të vogla. 
-Këto pjesë pastaj vendosen në "grill - matricen a1" (një strukturë e ngjashme me një rrjetë të përdorur në cipher) bazuar në pozicionet e shënuara nga vrimat(x qe kemi vendosur ne amtrice fillestare) në grillë.
-Metoda substring merr tre parametra: stringun hyrës (str), indeksin fillestar (start), dhe indeksin mbarues (end). Ajo kthen një nënpjesë të stringut hyrës që fillon nga indeksi start dhe përfundon në indeksin end.
-Ne Main: Permes kesaj metode kontrollon ne main gjatesine së hyres, nëse teksti hyrës ka më pak se 36 karaktere, ai plotësohet me karaktere 'x' derisa të arrijë një gjatësi prej 36.
-Ne Encryption class: Në metodën Encryption.encrypt, teksti hyrës ndahet në nënstringe me gjatësi 9 duke përdorur metodën substring, Këto nënstringe pastaj enkriptohen duke përdorur algoritmin e Fleissner Cipher dhe karakteret e enkriptuar të rezultuar vendosen në një matricë 6x6 (out).
-Ky proces përsëritet për çdo nënstring derisa të enkriptohet i gjithë teksti.
+Ne klasen substring gjendet metoda substring per te ndare tekstin hyres ne nenpjese te vogla. 
+Keto pjese pastaj vendosen ne "grill - matricen a1" (nje strukture e ngjashme me nje rrjete te perdorur ne cipher) bazuar ne pozicionet e shenuara nga vrimat(x qe kemi vendosur ne amtrice fillestare) ne grille.
+Metoda substring merr tre parametra: stringun hyres (str), indeksin fillestar (start), dhe indeksin mbarues (end). Ajo kthen nje nenpjese te stringut hyres qe fillon nga indeksi start dhe perfundon ne indeksin end.
+Ne Main: Permes kesaj metode kontrollon ne main gjatesine se hyres, nese teksti hyres ka me pak se 36 karaktere, ai plotesohet me karaktere 'x' derisa te arrije nje gjatesi prej 36.
+Ne Encryption class: Ne metoden Encryption.encrypt, teksti hyres ndahet ne nenstringe me gjatesi 9 duke perdorur metoden substring, Keto nenstringe pastaj enkriptohen duke perdorur algoritmin e Fleissner Cipher dhe karakteret e enkriptuar te rezultuar vendosen ne nje matrice 6x6 (out).
+Ky proces perseritet per çdo nenstring derisa te enkriptohet i gjithe teksti.
+
