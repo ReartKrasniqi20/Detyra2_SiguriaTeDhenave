@@ -1,10 +1,6 @@
 # Detyra2_SiguriaTeDhenave
 
-==== Pershkrimi i secilit algoritem qe perdoret ne program ====
-
-
-Algoritmi ne file VigenereCipherEncrypt.java 
-
+==== Pershkrimi i algoritmit ne file VigenereCipherEncrypt.java ====
 
 Ne file VigenereCipherEcrypt se pari kemi nje klase publike qe quhet VigenereCipherEncrypt dhe nje metode statike me emrin encrypt qe merr dy stringje si parametra: ‘message’ mesazhi qe deshirojme me enkriptu dhe ‘key’ celesi per me perdor ne enkriptim.
 Vazhdojme me inicializimin e nje objekti ‘StringBuilder’ per te ruajtur mesazhin e enkriptuar.
@@ -33,9 +29,7 @@ Perfundimisht e kthejme ‘encryptedMessage’ sin je string duke perdorur ‘to
 
 
 
-Algoritmi ne file VigenereCipherDecrypt.java 
-
-
+==== Pershkrimi i algoritmit ne file VigenereCipherDecrypt.java ====
 
 Per te dekriptuar tekstin e shifrur Vigenere Cipher fillimisht, tekstin dhe celsin e shifruar kthehen ne shkronja te
 medha per te lehtesuar shkrimin.
@@ -58,7 +52,7 @@ return decryptedMessage.toString(): Kthen tekstin e dekriptuar si nje varg.
 
 
 
-Algoritmi ne file VigenereCipherTest.java
+==== Pershkrimi i algoritmit ne file VigenereCipherTest.java ====
 
 Ky algoritem printon mesazhin ne terminal me ndihme te metodes ‘main’ dhe tregon qe po fillon procesi i enkriptimit apo dekriptimit me VigenereCipher.
 Perdoruesi i programit pyetet per inputin, ne menyre qe programi te dije a me enkriptu apo dekriptu. Perdoruesi mund te zgjedh numrin 1 per me enkriptu apo numrin 2 per me dekriptu. 
