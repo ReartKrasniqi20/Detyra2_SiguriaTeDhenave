@@ -2,9 +2,11 @@
 
 ==== Udhëzimet e hollësishme se si të ekzekutohet programi ====
 
-1. Klonohet Repository nga Github
-2. Tek file VigenereCipherEncryptTest.java dhe te VigenereCipherDecryptTest eshte implementimi i enkriptimit dhe dekripitimit(perkatesisht) duke perdorur Vigenere Cipher 
-3. Tek file TurninGrilleCipherEncryptTest.java dhe te TurninGrilleCipherDecryptTest eshte implementimi i enkriptimit dhe dekripitimit(perkatesisht) duke perdorur Turnin Grille Cipher 
+1.	Shkarkimi dhe instalimi i Visual Studio Code dhe Java Extension Pack.
+2.	Shkarkimi i kodit nga GitHub. Klikon ne butonin ‘Code’ ne GitHub dhe pastaj zgjedhet opsioni ZIP per te shkarkuar kodin ne           kompjuter.    
+3.	Ekstraktimi i skedarit te kodit nga skedari ZIP dhe vendosja e tij ne dosjen e Visual Studio Code. 
+4.	Hapja e projektit ne Visual Studio Code.
+5.	Ne dy fajllat VigenereCipherTest.java ose TurninGrilleTest.java klikoni ne butonin ‘Run’ dhe programi i deshiruar ekzekutohet.
 
 
 
