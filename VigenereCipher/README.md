@@ -1,6 +1,6 @@
 # Detyra2_SiguriaTeDhenave
 
-==== Udhëzimet e hollësishme se si të ekzekutohet programi ====
+==== Udhezimet e hollesishme se si ekzekutohet programi ====
 
 1.	Shkarkimi dhe instalimi i Visual Studio Code dhe Java Extension Pack.
 2.	Shkarkimi i kodit nga GitHub. Klikon ne butonin ‘Code’ ne GitHub dhe pastaj zgjedhet opsioni ZIP per te shkarkuar kodin ne           kompjuter.    
@@ -11,8 +11,7 @@
 
 
 
-
-==== Një përshkrim i shkurtër por i plotë për secilën algoritëm që implementohet në program ====
+==== Pershkrimi i secilit algoritem qe perdoret ne program ====
 
 
 Algoritmi ne file VigenereCipherEncrypt.java 
