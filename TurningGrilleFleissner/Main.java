@@ -1,4 +1,4 @@
-package TurningGrilleFleissner
+package TurningGrilleFleissner;
   
 import java.util.Scanner;
 public class Main {
