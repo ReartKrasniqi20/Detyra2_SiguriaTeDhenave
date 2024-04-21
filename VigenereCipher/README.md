@@ -3,10 +3,10 @@
 ==== Udhezimet e hollesishme se si ekzekutohet programi ====
 
 1.	Shkarkimi dhe instalimi i Visual Studio Code dhe Java Extension Pack.
-2.	Shkarkimi i kodit nga GitHub. Klikon ne butonin ‘Code’ ne GitHub dhe pastaj zgjedhet opsioni ZIP per te shkarkuar kodin ne           kompjuter.    
+2.	Shkarkimi i kodit nga GitHub. Klikon ne butonin ‘Code’ ne GitHub dhe pastaj zgjedhet opsioni ZIP per te shkarkuar kodin ne kompjuter.    
 3.	Ekstraktimi i skedarit te kodit nga skedari ZIP dhe vendosja e tij ne dosjen e Visual Studio Code. 
 4.	Hapja e projektit ne Visual Studio Code.
-5.	Ne dy fajllat VigenereCipherTest.java ose TurninGrilleTest.java klikoni ne butonin ‘Run’ dhe programi i deshiruar ekzekutohet.
+5.	Ne dy fajllat VigenereCipherTest.java(enkriptimi ose dekriptimi i Vinegere Cipher) ose main.java(enkriptimi ose dekriptimi i Turnin grille cipher) klikoni ne butonin ‘Run’ dhe programi i deshiruar ekzekutohet.
 
 
 
