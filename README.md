@@ -79,25 +79,3 @@ Nese perdoruesi ka zgjedh numrin 1(enkriptimin) atij i kerkohet celesi me shkron
 E nese perdoruesi zgjedh 2(dekriptimin), procesi eshte krejtesisht i ngjashem si me lart. Por ne vend qe te thirret metoda ‘encrypt’, thirret metoda ‘decrypt’ e klases ‘VigenereCipherDecrypt’. Rezultati i dekriptimit shfaqet ne terminal.
 Nese perdoruesi jep zgjidhje qe nuk eshte as 1 as 2, atehere ne ekran shfaqet mesazhi “Input i gabuar”.
 Ne fund objekti ‘Scanner’ mbyllet per te liruar hapesiren ne kujtesen e kompjuterit.
-
-
-
-
-==== Shembuj të rezultateve të ekzekutimit, ku përfshihet një shembull për secilën algoritëm që përdoret====
-
-----Vigenere Cipher----
-
-- Shtyp 1 te enkriptosh mesazhin / Shtyp 2 te dekriptosh mesazhin - 
-1
-Shkruani celesin me shkronja te medha: FIEK
-Jepni mesazhin qe deshironi te enkriptohet me Vigenere Cipher: SIGURI
-Mesazhi i enkriptuar eshte: XQKEWQ
-
-----Vigenere Cipher----
-
-- Shtyp 1 te enkriptosh mesazhin / Shtyp 2 te dekriptosh mesazhin - 
-2
-Shkruani celesin me shkronja te medha: FIEK
-Jepni mesazhin qe deshironi te dekriptohet me Vigenere Cipher: XQKEWQ
-Mesazhi i dekriptuar eshte: SIGURI
-
