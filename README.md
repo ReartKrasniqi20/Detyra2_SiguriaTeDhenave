@@ -70,6 +70,13 @@ return decryptedMessage.toString(): Kthen tekstin e dekriptuar si nje varg.
 
 Algoritmi ne file VigenereCipherTest.java
 
+Ky algoritem printon mesazhin ne terminal me ndihme te metodes ‘main’ dhe tregon qe po fillon procesi i enkriptimit apo dekriptimit me VigenereCipher.
+Perdoruesi i programit pyetet per inputin, ne menyre qe programi te dije a me enkriptu apo dekriptu. Perdoruesi mund te zgjedh numrin 1 per me enkriptu apo numrin 2 per me dekriptu. 
+Pas zgjedhjes se perdoruesit, program vazhdon.
+Nese perdoruesi ka zgjedh numrin 1(enkriptimin) atij i kerkohet celesi me shkronja te medha dhe pastaj mesazhi qe deshiron me enkriptu. Pas marrjes se inputit programi e thirr metoden ‘encrypt’ te klases ‘VigenereCipherEncrypt’ per me enkriptu mesazhin me celesin e dhene. Ne fund rezultati i enkriptimin shfaqet ne terminal.
+E nese perdoruesi zgjedh 2(dekriptimin), procesi eshte krejtesisht i ngjashem si me lart. Por ne vend qe te thirret metoda ‘encrypt’, thirret metoda ‘decrypt’ e klases ‘VigenereCipherDecrypt’. Rezultati i dekriptimit shfaqet ne terminal.
+Nese perdoruesi jep zgjidhje qe nuk eshte as 1 as 2, atehere ne ekran shfaqet mesazhi “Input i gabuar”.
+Ne fund objekti ‘Scanner’ mbyllet per te liruar hapesiren ne kujtesen e kompjuterit.
 
 
 
