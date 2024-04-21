@@ -1,6 +1,6 @@
 package TurningGrille(Fleissner);
 
-public class encryption {
+public class Encryption {
      public static char[][] encrypt(String text) {
         char[][] a1 = {
                 {'B', 'X', 'C', 'X', 'D', 'X'},
