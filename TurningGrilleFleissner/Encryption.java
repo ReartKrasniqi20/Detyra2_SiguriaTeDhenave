@@ -1,4 +1,4 @@
-package TurningGrille(Fleissner);
+package TurningGrilleFleissner;
 
 public class Encryption {
      public static char[][] encrypt(String text) {
