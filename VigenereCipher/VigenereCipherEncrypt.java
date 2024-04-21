@@ -12,7 +12,7 @@ public class VigenereCipherEncrypt {
                 encryptedMessage.append((char)(((letter - 'A') + (key.charAt(j) - 'A')) % 26 + 'A'));
                 j = ++j % keyLength;
             } else {
-                encryptedMessage.append(letter); // Retain non-alphabetic characters
+                encryptedMessage.append(letter); // Ruaj karakteret qe sjane shkronja
             }
         }
         return encryptedMessage.toString();
