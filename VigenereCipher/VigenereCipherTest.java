@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class VigenereCipherTest {
     public static void main(String[] args) {
 
-        System.out.println("----Enkriptimi me Vigenere Cipher----\n");
+        System.out.println("----Vigenere Cipher----\n");
         Scanner in = new Scanner(System.in);
 
         // Lejon userin te zgjedh a deshiron enkriptim apo dekriptim te mesazhit

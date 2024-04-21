@@ -82,3 +82,20 @@ Ne fund objekti ‘Scanner’ mbyllet per te liruar hapesiren ne kujtesen e komp
 
 
 ==== Shembuj të rezultateve të ekzekutimit, ku përfshihet një shembull për secilën algoritëm që përdoret====
+
+----Vigenere Cipher----
+
+- Shtyp 1 te enkriptosh mesazhin / Shtyp 2 te dekriptosh mesazhin - 
+1
+Shkruani celesin me shkronja te medha: FIEK
+Jepni mesazhin qe deshironi te enkriptohet me Vigenere Cipher: SIGURI
+Mesazhi i enkriptuar eshte: XQKEWQ
+
+----Vigenere Cipher----
+
+- Shtyp 1 te enkriptosh mesazhin / Shtyp 2 te dekriptosh mesazhin - 
+2
+Shkruani celesin me shkronja te medha: FIEK
+Jepni mesazhin qe deshironi te dekriptohet me Vigenere Cipher: XQKEWQ
+Mesazhi i dekriptuar eshte: SIGURI
+
